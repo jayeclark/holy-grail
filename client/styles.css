@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  height: 90vh;
+}
+
+.section {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+header, aside, article, footer {
+  border-style: solid;
+  font-size: 1em;
+  padding: 10px;
+}
+
+aside {
+  background: rgb(152, 251, 152);
+}
+
+article {
+  background: rgb(255, 204, 214);
+}
+
+header, footer {
+  grid-column: 1 / 4;
+  background: rgb(148, 201, 250);
+}
+
+body {
+  font-family: Arial;
+}
+
+button {
+  font-size: 1em;
+}
+
+img {
+  height: 32px;
+  width: 32px;
+  margin: 4px;
+}
