@@ -7,8 +7,9 @@
 }
 
 .section {
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: 800;
+  margin-left: 10px;
 }
 
 header, aside, article, footer {
@@ -28,6 +29,12 @@ article {
 header, footer {
   grid-column: 1 / 4;
   background: rgb(148, 201, 250);
+}
+
+header {
+  background: rgb(250, 148, 148);
+  border-color: transparent;
+  border-radius: 10px;
 }
 
 body {

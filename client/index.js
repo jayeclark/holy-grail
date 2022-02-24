@@ -9,18 +9,18 @@ function PlusMinus({section, handle}){
   }
 
   return (<>
-    <img src={`icons/${section}_plus.png`} id="plus" onClick={((e)=> handlePlusMinus(e))}/>
     <img src={`icons/${section}_minus.png`} id="minus" onClick={((e)=> handlePlusMinus(e))}/>
-  </>)
+    <img src={`icons/${section}_plus.png`} id="plus" onClick={((e)=> handlePlusMinus(e))}/>
+     </>)
 }
 
 function Data(props) {
-  return (<div>
-    Header: {props.data.header},
-    Left: {props.data.left},
-    Article: {props.data.article},
-    Right: {props.data.right},
-    Footer: {props.data.footer}
+  return (<div style={{ border:"1px solid #000",  marginTop: "20px", borderRadius: "5px", width: "max-content", display: "flex", padding: "5px 10px", fontSize: "12px", position: "relative", bottom: "0px", left: "0px"}}>
+    H {props.data.header}&nbsp;-&nbsp; 
+    L {props.data.left}&nbsp;-&nbsp; 
+    A {props.data.article}&nbsp;-&nbsp; 
+    R {props.data.right}&nbsp;-&nbsp; 
+    F {props.data.footer}
   </div>)
 }
 

@@ -8,9 +8,8 @@ client.connect();
 const keys = ["header", "left", "article", "right", "footer"];
 
 const setInitialData = async () => {
-  await client.mSet([...keys.map((x) => [x, "0"])]);
+  await client.mSet([...keys.map((x) => [x, "1"])]);
   const result = await client.mGet(keys);
-  console.log(result);
 };
 setInitialData();
 
