@@ -1,3 +1,14 @@
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  padding: 5px;
+  display: block;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+}
 .grid {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
@@ -19,16 +30,25 @@ header, aside, article, footer {
 }
 
 aside {
-  background: rgb(152, 251, 152);
+  background: #fff;
+  border: 2px solid rgb(50, 116, 228);
+  border-radius: 10px;
 }
 
 article {
-  background: rgb(255, 204, 214);
+  background: #fff;
+  border: 2px solid rgb(15, 37, 67);
+  border-radius: 10px;
 }
 
 header, footer {
   grid-column: 1 / 4;
-  background: rgb(148, 201, 250);
+}
+
+footer {
+  background: #fff;
+  border: 2px solid rgb(79, 173, 132);
+  border-radius: 10px;
 }
 
 header {

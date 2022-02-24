@@ -15,7 +15,7 @@ function PlusMinus({section, handle}){
 }
 
 function Data(props) {
-  return (<div style={{ border:"1px solid #000",  marginTop: "20px", borderRadius: "5px", width: "max-content", display: "flex", padding: "5px 10px", fontSize: "12px", position: "relative", bottom: "0px", left: "0px"}}>
+  return (<div style={{ margin: "20px auto 0px auto", border:"1px solid #000", borderRadius: "5px", width: "max-content", display: "flex", padding: "5px 10px", fontSize: "12px", position: "relative", bottom: "0px", left: "0px"}}>
     H {props.data.header}&nbsp;-&nbsp; 
     L {props.data.left}&nbsp;-&nbsp; 
     A {props.data.article}&nbsp;-&nbsp; 
