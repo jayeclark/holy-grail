@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 
+app.use(express.static('client'));
+
 const redis = require("redis");
 const client = redis.createClient();
 client.connect();
@@ -26,7 +28,6 @@ function data() {
   });
 }
 
-app.use(express.static("client"));
 
 app.get("/data", (_, res) => {
   data().then((data) => {
