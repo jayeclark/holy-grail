@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static('client'));
 
 const redis = require("redis");
-const client = redis.createClient();
+const client = redis.createClient({ url: process.env['REDIS_URL']});
 client.connect();
 
 const keys = ["header", "left", "article", "right", "footer"];
