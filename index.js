@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.use(express.static('client'));
+app.use(express.static("./client"));
 
 const redis = require("redis");
 const client = redis.createClient({ url: process.env['REDIS_URL']});
